@@ -5,11 +5,12 @@
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "jsx": "react-jsx",
     "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
+    // "allowImportingTsExtensions": true,
+
     "isolatedModules": true,
     "skipLibCheck": true,
-    "noEmit": false,                      // Emit output even with type errors
-    "strict": false,                      // Disable strict mode
+    "noEmit": true, // Emit output even with type errors
+    "strict": false, // Disable strict mode
     "noUnusedLocals": false,
     "noUnusedParameters": false,
     "noFallthroughCasesInSwitch": false,
