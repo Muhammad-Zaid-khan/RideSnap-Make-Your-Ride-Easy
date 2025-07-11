@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite'
 import tailwindcss from '@tailwindcss/vite'
+import react from '@vitejs/plugin-react';
 export default defineConfig({
   server: {
     proxy: {
@@ -8,7 +9,11 @@ export default defineConfig({
   },
   plugins: [
     tailwindcss(),
+    react(),
   ],
+  esbuild: {
+    logOverride: { 'this-is-undefined-in-esm': 'silent' }
+  }
 });
 
 
